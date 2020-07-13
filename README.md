@@ -21,16 +21,30 @@ Whenever a match was found (prioritising titles over glosses and English over la
 
 ### Build the Inventory
 To correctly build the inventory, i.e., the association between a lexeme (lemma#pos) and its possible meanings, you shall follow this procedure.
-- Login or sign up to [babelnet.org/](https://babelnet.org/)
+- Login or sign up to [babelnet.org](https://babelnet.org/download)
 - Request and download BabelNet indices.
 - Download BabelNet API.
 - `cd inventory_building`
 - `cp /path/to/BabelNet-API-[VERSION]/resources/* .`
 - `cp /path/to/BabelNet-API-[VERSION]/config .`
 - Setup the config properly **this step is essential, if not properly setup, you may end up having wrong inventories** (More on this will follow).
-- `bash bash create_inventories_sem13_15.sh -i /path/to/output_inventories/ -d /path/to/multilingual_wsd_wn_v1.0 -s [wn|all]`
+- `bash create_inventories_sem13_15.sh -i /path/to/output_inventories/ -d /path/to/multilingual_wsd_wn_v1.0 -s [wn|all]`
 - Check out the inventories in `/path/to/output_inventories/[lang]` where lang may be one among \[de, es, fr, it\]
 
+Example:
+```bash
+$ pwd
+> /home/user/downloads/
+$ cd inventory_building
+$ cp -r /home/user/data/BabelNet-API-4.0.1/resources . 
+$ cp -r /home/user/data/BabelNet-API-4.0.1/config . 
+$ # setting up paths in configs
+$ bash create_inventories_sem13_15.sh -i /home/user/downloads/inventory_building/data/multilingual_wsd_wn_v1.0/inventories/ -d /home/user/downloads/inventory_building/data/multilingual_wsd_wn_v1.0/ -s wn
+$ ls /home/user/downloads/inventory_building/data/multilingual_wsd_wn_v1.0/inventories/
+> de/ es/ fr/ it/
+$ ls /home/user/downloads/inventory_building/data/multilingual_wsd_wn_v1.0/inventories/it
+> inventory.it.withgold.sorted.txt  inventory.it.withgold.txt
+```
 #### Config Setup
 In order to properly setup BabelNet config `cd` into `config` parent folder and verify that each path in `babelnet.config`, `babelnet.var.config`, `jlt.config` and `jlt.var.config` is reachable, as it is written in the files, from the directory you are in.
 
@@ -78,7 +92,9 @@ SemEval2013-de | 1389 | 692 | 690 | 2.52 | 3.30 | 362 |
 SemEval2015-it | 1063 | 557 | 730 | 5.02 | 5.87 | 456 | 
 SemEval2015-es | 1101 | 541 | 774 | 6.62 | 7.39 | 475 |
 
-
+# Contacts
+For any question either open an issue on github or contact
+pasini\[at\]di\[dot\]uniroma1\[dot\]it
 # License
 All data and codes provided in this repository are subject to the  Attribution-Non Commercial-ShareAlike 4.0 International license (CC BY-NC 4.0).
 
