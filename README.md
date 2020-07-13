@@ -39,10 +39,10 @@ $ cd inventory_building
 $ cp -r /home/user/data/BabelNet-API-4.0.1/resources . 
 $ cp -r /home/user/data/BabelNet-API-4.0.1/config . 
 $ # setting up paths in configs
-$ bash create_inventories_sem13_15.sh -i /home/user/downloads/inventory_building/inventories/wn -d /home/user/downloads/inventory_building -s wn
-$ ls /home/user/multilingual_wsd_wn_v1.0/inventories/wn
+$ bash create_inventories_sem13_15.sh -i /home/user/downloads/inventory_building/data/multilingual_wsd_wn_v1.0/inventories/ -d /home/user/downloads/inventory_building/data/multilingual_wsd_wn_v1.0/ -s wn
+$ ls /home/user/downloads/inventory_building/data/multilingual_wsd_wn_v1.0/inventories/
 > de/ es/ fr/ it/
-$ ls /home/user/multilingual_wsd_wn_v1.0/inventories/wn/it
+$ ls /home/user/downloads/inventory_building/data/multilingual_wsd_wn_v1.0/inventories/it
 > inventory.it.withgold.sorted.txt  inventory.it.withgold.txt
 ```
 #### Config Setup
