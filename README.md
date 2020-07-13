@@ -17,7 +17,24 @@ Thanks to WordNet keys (version 3.0) we could easily map the old BabelNet synset
 in BabelNet 4.0. 
 As for those instances that were not associated with a WordNet sense key, instead, we used the original BabelNet indices to retrieve the Wikipedia page title 
 and the gloss associated with the target BabelNet synset (both in English and in the specific language) and searched them in the new indices. 
-Whenever a match was found (prioritising titles over glosses and English over language-specific information ) we mapped the instance to the found BabelNet id.If no match was found we discarded the instance.
+Whenever a match was found (prioritising titles over glosses and English over language-specific information ) we mapped the instance to the found BabelNet id. If no match was found we discarded the instance.
+
+### Build the Inventory
+To correctly build the inventory, i.e., the association between a lexeme (lemma#pos) and its possible meanings, you shall follow this procedure.
+- Login or sign up to [babelnet.org/](https://babelnet.org/)
+- Request and download BabelNet indices.
+- Download BabelNet API.
+- `cd inventory_building`
+- `cp /path/to/BabelNet-API-[VERSION]/resources/* .`
+- `cp /path/to/BabelNet-API-[VERSION]/config .`
+- Setup the config properly **this step is essential, if not properly setup, you may end up having wrong inventories** (More on this will follow).
+- `bash bash create_inventories_sem13_15.sh -i /path/to/output_inventories/ -d /path/to/multilingual_wsd_wn_v1.0 -s [wn|all]`
+- Check out the inventories in `/path/to/output_inventories/[lang]` where lang may be one among \[de, es, fr, it\]
+
+#### Config Setup
+In order to properly setup BabelNet config `cd` into `config` parent folder and verify that each path in `babelnet.config`, `babelnet.var.config`, `jlt.config` and `jlt.var.config` is reachable, as it is written in the files, from the directory you are in.
+
+For example, if I am in `/home/user/multilingual_wsd_wn_v1.0` which has  `config/` as subfolder. I need to be sure that any path written in the aforementioned files is reachable from `/home/user/multilingual_wsd_wn_v1.0`.
 
 
 ## Data
