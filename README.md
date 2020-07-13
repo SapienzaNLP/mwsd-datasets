@@ -92,7 +92,9 @@ SemEval2013-de | 1389 | 692 | 690 | 2.52 | 3.30 | 362 |
 SemEval2015-it | 1063 | 557 | 730 | 5.02 | 5.87 | 456 | 
 SemEval2015-es | 1101 | 541 | 774 | 6.62 | 7.39 | 475 |
 
-
+# Contacts
+For any question either open an issue on github or contact
+pasini\[at\]di\[dot\]uniroma1\[dot\]it
 # License
 All data and codes provided in this repository are subject to the  Attribution-Non Commercial-ShareAlike 4.0 International license (CC BY-NC 4.0).
 
