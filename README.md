@@ -21,7 +21,7 @@ Whenever a match was found (prioritising titles over glosses and English over la
 
 ### Build the Inventory
 To correctly build the inventory, i.e., the association between a lexeme (lemma#pos) and its possible meanings, you shall follow this procedure.
-- Login or sign up to [babelnet.org/](https://babelnet.org/)
+- Login or sign up to [babelnet.org](https://babelnet.org/download)
 - Request and download BabelNet indices.
 - Download BabelNet API.
 - `cd inventory_building`
