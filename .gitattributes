@@ -1,0 +1,1 @@
+inventory_building/babelnet_mapping_4.0.jar filter=lfs diff=lfs merge=lfs -text
