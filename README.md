@@ -1,6 +1,8 @@
 # Multilingual Datasets for Word Sense Disambiguation
+** The English datasets for WSD have been previously collected by Raganato et al. EACL 2017 and can be found at [http://lcl.uniroma1.it/wsdeval/](http://lcl.uniroma1.it/wsdeval/). This repository contains only for the datasets in SemEval-2013 task 12 and SemEval-2015 task 13 for French, German, Italian and Spanish**
+
 In this repository we release an updated version of [SemEval-2013 task 12](https://www.aclweb.org/anthology/S13-2040/) 
-and [SemEval-2015 task 13](https://www.aclweb.org/anthology/S13-2040/) gold standards.
+and [SemEval-2015 task 13](https://www.aclweb.org/anthology/S13-2040/) **multilingual** gold standards.
 The original data used old versions of BabelNet, i.e., 1.1.1 and 2.5, respectively, which are no longer available. 
 To ease their use and allow a fair comparison among systems, we mapped all the possible gold keys in the original
 datasets to the latest available version of [BabelNet](https://babelnet.org) (indices version 4.0 and API version 4.0.1),
