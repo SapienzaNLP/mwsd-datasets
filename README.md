@@ -27,9 +27,11 @@ To correctly build the inventory, i.e., the association between a lexeme (lemma#
 - `cd inventory_building`
 - `cp /path/to/BabelNet-API-[VERSION]/resources/* .`
 - `cp /path/to/BabelNet-API-[VERSION]/config .`
-- Setup the config properly **this step is essential, if not properly setup, you may end up having wrong inventories** (More on this will follow).
-- `bash create_inventories_sem13_15.sh -i /path/to/output_inventories/ -d /path/to/multilingual_wsd_wn_v1.0 -s [wn|all]`
+- Setup the properties files properly **this step is essential, if not properly setup, you may end up having wrong inventories** (More on this will follow).
+- `bash create_inventories_sem13_15.sh -i /path/to/output_inventories/ -d /path/to/multilingual_datasets -s [wn|all]`
 - Check out the inventories in `/path/to/output_inventories/[lang]` where lang may be one among \[de, es, fr, it\]
+
+The `multilingual_datasets` can be extracted by running `tar xvzf data/multilingual_wsd_*_v1.0.tar.gz`
 
 Example:
 ```bash
@@ -46,7 +48,7 @@ $ ls /home/user/downloads/inventory_building/data/multilingual_wsd_wn_v1.0/inven
 > inventory.it.withgold.sorted.txt  inventory.it.withgold.txt
 ```
 #### Config Setup
-In order to properly setup BabelNet config `cd` into `config` parent folder and verify that each path in `babelnet.config`, `babelnet.var.config`, `jlt.config` and `jlt.var.config` is reachable, as it is written in the files, from the directory you are in.
+In order to properly setup BabelNet config `cd` into `config` parent folder and verify that each path in `babelnet.properties`, `babelnet.var.properties`, `jlt.properties` and `jlt.var.properties` is reachable, as it is written in the files, from the directory you are in.
 
 For example, if I am in `/home/user/multilingual_wsd_wn_v1.0` which has  `config/` as subfolder. I need to be sure that any path written in the aforementioned files is reachable from `/home/user/multilingual_wsd_wn_v1.0`.
 
