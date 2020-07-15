@@ -28,8 +28,10 @@ To correctly build the inventory, i.e., the association between a lexeme (lemma#
 - `cp /path/to/BabelNet-API-[VERSION]/resources/* .`
 - `cp /path/to/BabelNet-API-[VERSION]/config .`
 - Setup the properties files properly **this step is essential, if not properly setup, you may end up having wrong inventories** (More on this will follow).
-- `bash create_inventories_sem13_15.sh -i /path/to/output_inventories/ -d /path/to/multilingual_wsd_wn_v1.0 -s [wn|all]`
+- `bash create_inventories_sem13_15.sh -i /path/to/output_inventories/ -d /path/to/multilingual_datasets -s [wn|all]`
 - Check out the inventories in `/path/to/output_inventories/[lang]` where lang may be one among \[de, es, fr, it\]
+
+The `multilingual_datasets` can be extracted by running `tar xvzf data/multilingual_wsd_*_v1.0.tar.gz`
 
 Example:
 ```bash
