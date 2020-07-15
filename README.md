@@ -54,7 +54,9 @@ For example, if I am in `/home/user/multilingual_wsd_wn_v1.0` which has  `config
 
 #### BabelNet To WordNet mapping
 In case you need to have a mapping between BabelNet offsets and WordNet offsets you can compute it by running
-`java -jar babelnet_mapping_4.0.jar -build_bn2wn_map /path/to/output/file.txt`
+```bash
+java -jar babelnet_mapping_4.0.jar -build_bn2wn_map /path/to/output/file.txt
+```
 This wil generate a tab-separated file having in the first column a BabelNet offset ID and in the subsequent columns the corresponding WordNet (version 3.0) offsets. 
 
 ## Data
