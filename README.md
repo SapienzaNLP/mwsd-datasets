@@ -1,4 +1,4 @@
-# Dislaimer
+# Disclaimer
 - The **English datasets** for WSD have been previously collected by Raganato et al. EACL 2017 and **can be found at [http://lcl.uniroma1.it/wsdeval/](http://lcl.uniroma1.it/wsdeval/)**. **This repository contains** only for the **datasets in SemEval-2013 task 12 and SemEval-2015 task 13 for French, German, Italian and Spanish**
 - In order to correctly clone this repository **you need [git-lfs](https://git-lfs.github.com/) installed** and it is highly encouraged to use git-clone command rather than download the repo as a zip as the large files won't be automatically included in zip folder. Read this [issue](https://github.com/git-lfs/git-lfs/issues/903#issuecomment-632841480) for more informaion on this regard
 
