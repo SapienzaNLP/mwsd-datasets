@@ -120,6 +120,6 @@ All data and codes provided in this repository are subject to the  Attribution-N
 2020-07-17 19:27:52,042 [main] [ INFO  ] BabelNet - BabelNet online RESTful API v4.0 written by Francesco Cecconi, Roberto Navigli and Daniele Vannella
 Exception in thread "main" java.lang.UnsupportedOperationException: getSynsetIterator: Unsupported online operation
 ```
-Your babelnet.var.properties in the config/ folder is not properly set and you are attempting to use the online API rather then the indices you should have downloaded.
+Your `babelnet.var.properties` in the config/ folder is not properly set and you are attempting to use the online API rather then the indices you should have downloaded.
 
 **Solution**: edit babelnet.var.properties file and set `babelnet.dir` to the local path to your BabelNet indeices. 
