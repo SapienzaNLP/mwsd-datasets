@@ -58,6 +58,10 @@ In order to properly setup BabelNet config `cd` into `config` parent folder and 
 
 For example, if I am in `/home/user/multilingual_wsd_wn_v1.0` which has  `config/` as subfolder. I need to be sure that any path written in the aforementioned files is reachable from `/home/user/multilingual_wsd_wn_v1.0`.
 
+**Most importantly, be sure to set:**
+- `babelnet.dir` in `babelnet.var.properties` with the correct path towards BabelNet indices (e.g., BabelNet-4.0.1/ folder)
+- `jlt.wordnetPrefix` and `jlt.wordnetVersion` in `jlt.var.properties` file with the path to your WordNet installation and WordNet version (this has to be == 3.0)
+
 #### BabelNet To WordNet mapping
 In case you need to have a mapping between BabelNet offsets and WordNet offsets you can compute it by running
 ```bash
