@@ -1,6 +1,8 @@
 # Disclaimer
 - The **English datasets** for WSD have been previously collected by Raganato et al. EACL 2017 and **can be found at [http://lcl.uniroma1.it/wsdeval/](http://lcl.uniroma1.it/wsdeval/)**. **This repository contains** only for the **datasets in SemEval-2013 task 12 and SemEval-2015 task 13 for French, German, Italian and Spanish**
-- In order to correctly clone this repository **you need [git-lfs](https://git-lfs.github.com/) installed** and it is highly encouraged to use git-clone command rather than download the repo as a zip as the large files won't be automatically included in zip folder. Read this [issue](https://github.com/git-lfs/git-lfs/issues/903#issuecomment-632841480) for more informaion on this regard
+- The **Multilingual datasets** can be found at these two links:
+    - [**multilingual_wsd_all_v1.0.tar.gz**](https://drive.google.com/file/d/1nvEYwJ_RwH-ULtyJWo7nO6CmYxPlH0M5/view?usp=sharing)
+    - [**multilingual_wsd_wn_v1.0.tar.gz**](https://drive.google.com/file/d/1zziHJfLyG1wTXh5_FYTgBlgNejwFqq45/view?usp=sharing)
 
 # Multilingual Datasets for Word Sense Disambiguation
 
@@ -13,8 +15,8 @@ datasets to the latest available version of [BabelNet](https://babelnet.org) (in
 normalized the Part-of-Speech tags to the Universal POS tags and handled the multiword instances so that they are now
 associated with a single id and contained within a single XML tag. 
 Furthermore, we provide two standard splits: 
-1. all: comprising all the instances that we managed to map (data/multilingual_wsd_all_v1.0.tar.gz),
-2. wn: comprising only the instances tagged with a BabelNet synset which contains a sense in WordNet (data/multilingual_wsd_wn_v1.0.tar.gz). This second split is a subset of all.
+1. [all](https://drive.google.com/file/d/1nvEYwJ_RwH-ULtyJWo7nO6CmYxPlH0M5/view?usp=sharing): comprising all the instances that we managed to map,
+2. [wn](https://drive.google.com/file/d/1zziHJfLyG1wTXh5_FYTgBlgNejwFqq45/view?usp=sharing): comprising only the instances tagged with a BabelNet synset which contains a sense in WordNet. This second split is a subset of all.
 
 
 ## Datasets and Inventories Creation
@@ -37,7 +39,7 @@ To correctly build the inventory, i.e., the association between a lexeme (lemma#
 - `bash create_inventories_sem13_15.sh -i /path/to/output_inventories/ -d /path/to/multilingual_datasets -s [wn|all]`
 - Check out the inventories in `/path/to/output_inventories/[lang]` where lang may be one among \[de, es, fr, it\]
 
-The `multilingual_datasets` can be extracted by running `tar xvzf data/multilingual_wsd_*_v1.0.tar.gz`
+The `multilingual_datasets` can be extracted by running `tar xvzf multilingual_wsd_*_v1.0.tar.gz`
 
 Example:
 ```bash
