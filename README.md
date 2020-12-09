@@ -3,6 +3,7 @@
 - The **Multilingual datasets** can be found at these two links:
     - [**multilingual_wsd_all_v1.0.tar.gz**](https://drive.google.com/file/d/19Q1bg2LoMlEN3zK7gn8MuD0DAgL5cwbn/view?usp=sharingg)
     - [**multilingual_wsd_wn_v1.0.tar.gz**](https://drive.google.com/file/d/1k9C4n7vVPgHP1WnV8ao0Wfgwk2T46ovH/view?usp=sharing)
+- The **code to create the inventories** can be found at [babelnet_mapping_4.0.jar](https://drive.google.com/file/d/1tnkAE3pU87_m_JzM5oPectG4cVjcJ8kC/view?usp=sharing)
 
 # Multilingual Datasets for Word Sense Disambiguation
 
