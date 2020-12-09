@@ -1,8 +1,8 @@
 # Disclaimer
 - The **English datasets** for WSD have been previously collected by Raganato et al. EACL 2017 and **can be found at [http://lcl.uniroma1.it/wsdeval/](http://lcl.uniroma1.it/wsdeval/)**. **This repository contains** only for the **datasets in SemEval-2013 task 12 and SemEval-2015 task 13 for French, German, Italian and Spanish**
 - The **Multilingual datasets** can be found at these two links:
-    - [**multilingual_wsd_all_v1.0.tar.gz**](https://drive.google.com/file/d/1nvEYwJ_RwH-ULtyJWo7nO6CmYxPlH0M5/view?usp=sharing)
-    - [**multilingual_wsd_wn_v1.0.tar.gz**](https://drive.google.com/file/d/1zziHJfLyG1wTXh5_FYTgBlgNejwFqq45/view?usp=sharing)
+    - [**multilingual_wsd_all_v1.0.tar.gz**](https://drive.google.com/file/d/19Q1bg2LoMlEN3zK7gn8MuD0DAgL5cwbn/view?usp=sharingg)
+    - [**multilingual_wsd_wn_v1.0.tar.gz**](https://drive.google.com/file/d/1k9C4n7vVPgHP1WnV8ao0Wfgwk2T46ovH/view?usp=sharing)
 
 # Multilingual Datasets for Word Sense Disambiguation
 
